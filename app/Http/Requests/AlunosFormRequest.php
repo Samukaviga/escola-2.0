@@ -25,6 +25,8 @@ class AlunosFormRequest extends FormRequest
     {
         return [
             'nascimento.before' => 'O aluno precisa ter pelo menos 12 anos',
+            'turmas_id.required' => 'Selecione uma turma',
+            'nascimento.required' => 'Selecione a data de nascimento',
         ];
     }
 }

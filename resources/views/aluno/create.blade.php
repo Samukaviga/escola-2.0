@@ -48,7 +48,7 @@
                                             <div class="input-block local-forms">
                                                 <label >Turma</label>
                                                 <select name="turmas_id" id="professor" class="form-control" >
-                                                    <option >Selecione a turma</option>
+                                                    <option value="" >Selecione a turma</option>
                                                     @foreach($turmas as $turma)
                                                         <option value="{{ $turma->id }}" >{{ $turma->nome }}</option>
                                                     @endforeach
