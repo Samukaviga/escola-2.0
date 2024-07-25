@@ -59,7 +59,7 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/turmas/pesquisa', [TurmasController::class, 'pesquisar']);
 
-    Route::get('/exibir', [DadosController::class, 'index']);
+    Route::get('/exibir', [DadosController::class, 'index'])->name('index');
 
 
     Route::get('verify-email', EmailVerificationPromptController::class)
